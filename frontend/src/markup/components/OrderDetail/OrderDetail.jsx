@@ -12,13 +12,13 @@ function OrderDetail() {
 		singleOrderHash
 			.then((res) => {
 				if (!res.ok) {
-					console.log(res.status);
+					// console.log(res.status);
 					setApiError(true);
 				}
 				return res.json();
 			})
 			.then((data) => {
-				console.log(data);
+				// console.log(data);
 				if (data.length !== 0) {
 					setOrder(data);
 				}

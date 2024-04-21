@@ -35,7 +35,7 @@ function EmployeeEdit() {
 		singleEmployee
 			.then((res) => {
 				if (!res.ok) {
-					console.log(res.status);
+					// console.log(res.status);
 					setApiError(true);
 					if (res.status === 401) {
 						setApiErrorMessage("Please login again");
@@ -48,7 +48,7 @@ function EmployeeEdit() {
 				return res.json();
 			})
 			.then((data) => {
-				console.log(data);
+				// console.log(data);
 				if (data.length !== 0) {
 					setgetEmployee(data);
 					setEmployeeValue({
@@ -75,7 +75,7 @@ function EmployeeEdit() {
 		updateEmployee
 			.then((response) => response.json())
 			.then((data) => {
-				console.log(data);
+				// console.log(data);
 				// If Error is returned from the API server, set the error message
 				if (data.error) {
 					setServerError(data.error);

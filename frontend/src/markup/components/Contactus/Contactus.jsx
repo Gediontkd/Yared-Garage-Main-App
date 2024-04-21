@@ -34,16 +34,12 @@ function Contactus() {
 								<ul>
 									<li>
 										<i className="flaticon-pin"></i>
-										<span>Address:</span> 54B, Tailstoi Town 5238 MT, La city,
-										IA 5224
-									</li>
-									<li>
-										<i className="flaticon-email"></i>
-										<span>email:</span> contact@buildtruck.com
+										<span>Address:</span> 12/13, Addis Ababa 1000,
+Ethiopia
 									</li>
 									<li>
 										<i className="flaticon-phone"></i>
-										<span>phone:</span> 1800 456 7890 / 1254 897 3654
+										<span>phone:</span>+251987881470
 									</li>
 								</ul>
 							</div>

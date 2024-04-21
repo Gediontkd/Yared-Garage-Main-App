@@ -8,10 +8,7 @@ function OurServices() {
 					<div className="sec-title style-two">
 						<h2>Our Featured Services</h2>
 						<div className="text">
-							Bring to the table win-win survival strategies to ensure proactive
-							domination. At the end of the day, going forward, a new normal
-							that has evolved from generation X is on the runway heading
-							towards a streamlined cloud solution.
+						Introducing our premium automotive services lineup, meticulously crafted to ensure your vehicle receives the care and attention it deserves. At Yared Garage, we're dedicated to providing top-tier maintenance and repairs to keep you safely on the road. Discover our comprehensive range of services listed below, designed to address every aspect of your vehicle's needs.
 						</div>
 					</div>
 					<div className="row">

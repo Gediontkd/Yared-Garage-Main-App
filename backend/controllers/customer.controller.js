@@ -60,7 +60,7 @@ const createCustomer = async (req, res) => {
 
 		// Create the customer with a generated UUID
 		const generatedUuid = uuid.v4();
-		console.log("Generated UUID:", generatedUuid);
+		// console.log("Generated UUID:", generatedUuid);
 
 		const customerData = {
 			...req.body,

@@ -40,7 +40,7 @@ const CustomersList = () => {
 			const response = await customerServices.getAllCustomers(token);
 
 			if (!response.ok) {
-				console.log(response.status);
+				// console.log(response.status);
 				setApiError(true);
 
 				if (response.status === 401) {
@@ -69,26 +69,26 @@ const CustomersList = () => {
 	}, [token, currentPage]);
 
 	const handleFirstClick = () => {
-		console.log("Handling First Click");
+		// console.log("Handling First Click");
 		setCurrentPage(1);
 	};
 
 	const handlePreviousClick = () => {
-		console.log("Handling Previous Click");
+		// console.log("Handling Previous Click");
 		if (currentPage > 1) {
 			setCurrentPage(currentPage - 1);
 		}
 	};
 
 	const handleNextClick = () => {
-		console.log("Handling Next Click");
+		// console.log("Handling Next Click");
 		if (currentPage < totalPages) {
 			setCurrentPage(currentPage + 1);
 		}
 	};
 
 	const handleLastClick = () => {
-		console.log("Handling Last Click");
+		// console.log("Handling Last Click");
 		setCurrentPage(totalPages);
 	};
 

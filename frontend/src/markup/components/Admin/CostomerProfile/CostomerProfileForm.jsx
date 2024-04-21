@@ -29,7 +29,7 @@ const CustomerProfileForm = () => {
 	});
 
 	const [showAddVehicleForm, setShowAddVehicleForm] = useState(false);
-	console.log(showAddVehicleForm);
+	// console.log(showAddVehicleForm);
 	let loggedInEmployeeToken = "";
 	const { employee } = useAuth();
 	if (employee && employee.employee_token) {
@@ -38,7 +38,7 @@ const CustomerProfileForm = () => {
 	// toggling add  vehicle form
 	const handleToggleAddVehicleForm = () => {
 		setShowAddVehicleForm(!showAddVehicleForm);
-		console.log("object");
+		// console.log("object");
 	};
 	const closeInfo = () => {
 		setIsCustomerSelected(false);
@@ -46,14 +46,14 @@ const CustomerProfileForm = () => {
 	};
 	useEffect(() => {
 		// Log the customer_id value
-		console.log("customer_id in CustomerProfileForm:", customer_id);
+		// console.log("customer_id in CustomerProfileForm:", customer_id);
 
 		// Fetch customer
 		customerServices
 			.getCustomer(loggedInEmployeeToken, customer_id)
 			.then((res) => res.json())
 			.then((response) => {
-				console.log(response);
+				// console.log(response);
 				setCustomer(response);
 			})
 			.catch((error) => {
@@ -118,7 +118,7 @@ const CustomerProfileForm = () => {
 				vehiclesMap[vehicleData.vehicle_id] = vehicle;
 				// console.log("vehicle from vehiclesMap for each:", vehiclesMap);
 			});
-			console.log("vehicles from vehiclesMap for all:", vehiclesMap);
+			// console.log("vehicles from vehiclesMap for all:", vehiclesMap);
 			setVehicles(vehiclesMap);
 		} catch (error) {
 			console.log(error);

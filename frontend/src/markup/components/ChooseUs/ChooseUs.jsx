@@ -10,9 +10,7 @@ function ChooseUs() {
 							<div className="sec-title style-two">
 								<h2>Why Choose Us</h2>
 								<div className="text">
-									Bring to the table win-win survival strategies to ensure
-									proactive domination. At the end of the day, going forward, a
-									new normal that has evolved from generation heading towards.
+								Discover why Yared Garage is your ultimate choice for automotive care. With a commitment to excellence and a dedication to customer satisfaction, we offer a range of premium services designed to keep your vehicle running smoothly.
 								</div>
 							</div>
 							<div className="icon-box">

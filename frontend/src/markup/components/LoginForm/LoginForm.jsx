@@ -58,17 +58,17 @@ function LoginForm(props) {
 		loginEmployee
 			.then((response) => response.json())
 			.then((response) => {
-				console.log(response);
+				// console.log(response);
 
 				// If an error is returned from the API server, set the error message
 				if (response.status === "success") {
 					// Save the user in local storage
 					if (response.data.employee_token) {
-						console.log(response.data);
+						// console.log(response.data);
 						localStorage.setItem("employee", JSON.stringify(response.data));
 					}
 					// // Navigate to admin
-					console.log(location);
+					// console.log(location);
 					if (location.pathname === "/login") {
 						window.location.replace("/");
 					} else {
@@ -80,7 +80,7 @@ function LoginForm(props) {
 				}
 			})
 			.catch((err) => {
-				// console.log(err.message);
+				console.log(err.message);
 				setServerError("An error has occurred. Please try again later");
 			});
 	};

@@ -12,12 +12,12 @@ function AddVehicleForm({ toggle }) {
 	const [vehicle_serial, setVehicleSerial] = useState("");
 	const [vehicle_color, setVehicleColor] = useState("");
 	const { customer_id } = useParams();
-	console.log(customer_id);
+	// console.log(customer_id);
 	// Errors
 	const [Error, setError] = useState("");
 	const [success, setSuccess] = useState("");
 	const [serverError, setServerError] = useState("");
-	console.log(success);
+	// console.log(success);
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		// Handle client side validations
@@ -60,7 +60,7 @@ function AddVehicleForm({ toggle }) {
 		newVehicle
 			.then((response) => response.json())
 			.then((data) => {
-				console.log(data);
+				// console.log(data);
 				// // If Error is returned from the API server, set the error message
 				if (data.error) {
 					setServerError(data.error);

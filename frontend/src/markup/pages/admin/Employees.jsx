@@ -12,7 +12,7 @@ function Employees() {
 	const { isLogged, isAdmin } = useAuth();
 
 	if (isLogged) {
-		console.log("Kebede");
+		// console.log("Kebede");
 
 		if (isAdmin) {
 			return (

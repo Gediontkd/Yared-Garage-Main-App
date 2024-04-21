@@ -8,7 +8,7 @@ function Customers() {
 	const { isLogged, isAdmin, isManager } = useAuth();
 
 	if (isLogged) {
-		console.log("Test22");
+		// console.log("Test22");
 		if (isAdmin || isManager) {
 			return (
 				<div>

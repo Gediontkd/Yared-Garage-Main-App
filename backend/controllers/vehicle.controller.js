@@ -17,7 +17,7 @@ async function createVehicle(req, res, next) {
 			// Create the vehicle
 			const vehicle = await vehicleService.createVehicle(vehicleData);
 			if (vehicle.status === "fail") {
-				res.status(400).json({
+				 res.status(400).json({
 					status: vehicle.status,
 					message: vehicle.message,
 				});
@@ -36,6 +36,9 @@ async function createVehicle(req, res, next) {
 		}
 	}
 }
+
+
+
 // Create the update vehicle controller
 async function updateVehicle(req, res, next) {
 	try {

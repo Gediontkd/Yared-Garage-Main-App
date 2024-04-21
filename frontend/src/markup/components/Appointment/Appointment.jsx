@@ -13,7 +13,7 @@ function Appointment() {
 							</div>
 						</div>
 						<div className="right-column col-md-6">
-							<div className="phone">1800.456.7890</div>
+							<div className="phone">+25187881470</div>
 							<div className="btn">
 								<a href="#" className="theme-btn btn-style-one">
 									<span>Appointment</span>

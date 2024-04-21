@@ -47,7 +47,7 @@ const EmployeesList = () => {
 		allEmployees
 			.then((res) => {
 				if (!res.ok) {
-					console.log(res.status);
+					// console.log(res.status);
 					setApiError(true);
 					if (res.status === 401) {
 						setApiErrorMessage("Please login again");

@@ -11,18 +11,18 @@ function Footer(props) {
                                     <div className="icon">
                                         <span className="flaticon-pin"></span>
                                     </div>
-                                    <div className="text">54B, Tailstoi Town 5238 MT, <br /> La city, IA 522364</div>
+                                    <div className="text">12/13, Addis Ababa 1000, <br /> Ethiopia</div>
                                 </div>
                             </div>
                         </div>
                         <div className="footer-info-box col-md-4 col-sm-6 col-xs-12">
                             <div className="info-inner">
                                 <div className="content">
-                                    <div className="icon">
+                                    {/* <div className="icon">
                                         <span className="flaticon-email"></span>
-                                    </div>
-                                    <div className="text">Email us : <br /> <a
-                                        href="mailto:contact.contact@autorex.com">contact@autorex.com</a></div>
+                                    </div> */}
+                                    {/* <div className="text">Email us : <br /> <a
+                                        href="mailto:contact.contact@autorex.com">contact@autorex.com</a></div> */}
                                 </div>
                             </div>
                         </div>
@@ -32,7 +32,7 @@ function Footer(props) {
                                     <div className="icon">
                                         <span className="flaticon-phone"></span>
                                     </div>
-                                    <div className="text">Call us on : <br /><strong>+ 1800 456 7890</strong></div>
+                                    <div className="text">Call us on : <br /><strong>+251987881470</strong></div>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +103,7 @@ function Footer(props) {
             </div>
             <div className="auto-container">
                 <div className="footer-bottom">
-                    <div className="copyright-text">© Copyright <a href="#">Abe Garage</a> 2023 . All right reserved.</div>
+                    <div className="copyright-text">© Copyright <a href="#">Yared Garage</a> 2024 . All right reserved.</div>
                 </div>
             </div>
         </footer>

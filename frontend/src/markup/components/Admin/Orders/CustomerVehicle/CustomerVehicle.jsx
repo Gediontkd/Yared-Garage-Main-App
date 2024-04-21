@@ -76,7 +76,7 @@ function CustomerVehicle({ customer, vehicles }) {
 			}
 		});
 	};
-	console.log("selected services:", selectedServices);
+	// console.log("selected services:", selectedServices);
 	const formatSelectedServices = () => {
 		return selectedServices.map((serviceId) => ({
 			service_id: serviceId,
@@ -86,7 +86,7 @@ function CustomerVehicle({ customer, vehicles }) {
 	// handle submit order
 	const handleSubmitOrder = (event) => {
 		event.preventDefault();
-		console.log(employee);
+		// console.log(employee);
 		const employee_id = employee.employee_id;
 		const customer_id = customer.customer_id;
 		const vehicle_id = selectedVehicle.vehicle_id;
@@ -109,7 +109,7 @@ function CustomerVehicle({ customer, vehicles }) {
 		addOrder
 			.then((response) => response.json())
 			.then((data) => {
-				console.log(data);
+				// console.log(data);
 				// If Error is returned from the API server, set the error message
 				if (data.error) {
 					setServerError(data.error);

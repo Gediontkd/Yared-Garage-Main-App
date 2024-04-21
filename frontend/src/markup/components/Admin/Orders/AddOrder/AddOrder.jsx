@@ -25,7 +25,7 @@ function AddOrder() {
 			try {
 				let response = await customerService.getAllCustomers(token);
 				if (!response.ok) {
-					console.log(response.status);
+					// console.log(response.status);
 					setApiError(true);
 					if (response.status === 401) {
 						setApiErrorMessage("Please login again");

@@ -20,12 +20,12 @@ function ServiceEdit() {
 		singleService
 			.then((res) => {
 				if (res) {
-					console.log(res);
+					// console.log(res);
 				}
 				return res.json();
 			})
 			.then((data) => {
-				console.log(data);
+				// console.log(data);
 				if (data.length !== 0) {
 					setGetService(data);
 					setServiceValue({
@@ -46,7 +46,7 @@ function ServiceEdit() {
 		editService
 			.then((response) => response.json())
 			.then((data) => {
-				console.log(data);
+				// console.log(data);
 
 				if (data.error) {
 					console.log(data.error);

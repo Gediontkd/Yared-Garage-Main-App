@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../../../assets/images/logo.png";
+import logo from "../../../assets/images/yared.jpg";
 // Import the custom context hook
 import { useAuth } from "../../../Contexts/AuthContext";
 // Import the login service to access the logout function
@@ -22,7 +22,7 @@ function Header() {
 	} = useAuth();
 	const { pathname } = useLocation();
 
-	console.log(pathname);
+	// console.log(pathname);
 
 	// Use the custom hook to access the data in the context
 
@@ -61,7 +61,7 @@ function Header() {
 											</div>
 										) : (
 											<div className="phone-number ">
-												Schedule Appointment: <strong>1800 456 7890 </strong>
+												Schedule Appointment: <strong>+25187881470 </strong>
 											</div>
 										)}
 									</>

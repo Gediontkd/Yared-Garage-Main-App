@@ -42,7 +42,7 @@ async function createOrder(req, res, next) {
 			const getcustomerbyEmail = await customerService.getCustomerById(
 				getSingleOrder.customer_id
 			);
-			console.log(getcustomerbyEmail);
+			// console.log(getcustomerbyEmail);
 			const customerEmail = getcustomerbyEmail.customer_email;
 
 			const orderStatusURL = `http://localhost:5173/order-status/${getSingleOrder.order_hash}`;
@@ -201,7 +201,7 @@ async function getOrderByOrderHash(req, res, next) {
 		const orderHash = req.params.hash;
 		// console.log(orderHash);
 		const order = await orderService.getOrderByHash(orderHash);
-		console.log(order);
+		// console.log(order);
 		if (!order) {
 			res.status(400).json({
 				error: "Failed to get order!",
@@ -213,7 +213,7 @@ async function getOrderByOrderHash(req, res, next) {
 			);
 
 			const fetchServices = async (order) => {
-				console.log("order is:", order);
+				// console.log("order is:", order);
 
 				try {
 					const serviceIds = order.order_services.map(
@@ -225,7 +225,7 @@ async function getOrderByOrderHash(req, res, next) {
 							serviceService.getServiceById(serviceId)
 						)
 					);
-					console.log("responses from get service:", responses);
+					// console.log("responses from get service:", responses);
 
 					const servicesMap = responses.map((service) => {
 						return {
