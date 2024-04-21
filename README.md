@@ -1,5 +1,7 @@
 # Yared Garage App
 
+[Visit Yared Garage App Website](https://yaredgarage.com/)
+
 Yared Garage App is a comprehensive software solution meticulously crafted to streamline and elevate the day-to-day workflow at Yared Garage. This application is designed to simplify key processes such as customer intake, appointment management, and task tracking, with the ultimate goal of enhancing operational efficiency and maximizing customer satisfaction.
 
 ## Key Features
@@ -34,4 +36,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any inquiries or feedback regarding Yared Garage App, please contact us at [gediondaniel321@gmail.com](https://yaredgarage.com/).
+For any inquiries or feedback regarding Yared Garage App, please contact us at [gediondaniel321@gmail.com](mailto:gediondaniel321@gmail.com).
